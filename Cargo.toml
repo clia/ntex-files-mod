@@ -11,7 +11,7 @@ documentation = "https://docs.rs/clia-ntex-files-mod/"
 categories = ["asynchronous", "web-programming::http-server"]
 license = "MIT"
 edition = "2018"
-workspace = ".."
+# workspace = ".."
 
 [lib]
 name = "clia_ntex_files_mod"
