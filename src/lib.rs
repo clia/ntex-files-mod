@@ -584,8 +584,8 @@ impl PathBufWrp {
         for segment in path.split('/') {
             if segment == ".." {
                 buf.pop();
-            } else if segment.starts_with('.') {
-                return Err(UriSegmentError::BadStart('.'));
+            // } else if segment.starts_with('.') {
+            //     return Err(UriSegmentError::BadStart('.'));
             } else if segment.starts_with('*') {
                 return Err(UriSegmentError::BadStart('*'));
             } else if segment.ends_with(':') {
